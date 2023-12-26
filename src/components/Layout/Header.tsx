@@ -1,4 +1,4 @@
-import pomidoro from '../assets/pomodoro.png'
+import pomidoro from 'assets/pomodoro.png'
 type Props = {}
 
 export default function Header({ }: Props) {
