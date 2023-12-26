@@ -9,6 +9,10 @@ export const usePhase = () => {
         }
         setPhase(phase + 1);
     };
+    const phaseReset = () => {
+        setPhase(0);
+    };
+
     const currentPhase = phaseParams[phase];
-    return { currentPhase, nextPhase };
+    return { currentPhase, nextPhase, phaseReset };
 };

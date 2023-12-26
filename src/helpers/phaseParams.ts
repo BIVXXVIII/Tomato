@@ -3,45 +3,51 @@ export type Phase = {
     durationinMinutes: number;
     nextPhaseDuration: number;
 };
+const timeDurationConfig = {
+    work: 25,
+    break: 5,
+    bigBreak: 30,
+};
+
 export const phaseParams: Phase[] = [
     {
         name: "work",
-        durationinMinutes: 20,
-        nextPhaseDuration: 5,
+        durationinMinutes: timeDurationConfig.work,
+        nextPhaseDuration: timeDurationConfig.break,
     },
     {
         name: "small break",
-        durationinMinutes: 5,
-        nextPhaseDuration: 20,
+        durationinMinutes: timeDurationConfig.break,
+        nextPhaseDuration: timeDurationConfig.work,
     },
     {
         name: "work",
-        durationinMinutes: 20,
-        nextPhaseDuration: 5,
+        durationinMinutes: timeDurationConfig.work,
+        nextPhaseDuration: timeDurationConfig.break,
     },
     {
         name: "small break",
-        durationinMinutes: 5,
-        nextPhaseDuration: 20,
+        durationinMinutes: timeDurationConfig.break,
+        nextPhaseDuration: timeDurationConfig.work,
     },
     {
         name: "work",
-        durationinMinutes: 20,
-        nextPhaseDuration: 5,
+        durationinMinutes: timeDurationConfig.work,
+        nextPhaseDuration: timeDurationConfig.break,
     },
     {
         name: "small break",
-        durationinMinutes: 5,
-        nextPhaseDuration: 20,
+        durationinMinutes: timeDurationConfig.break,
+        nextPhaseDuration: timeDurationConfig.work,
     },
     {
         name: "work",
-        durationinMinutes: 20,
-        nextPhaseDuration: 15,
+        durationinMinutes: timeDurationConfig.work,
+        nextPhaseDuration: timeDurationConfig.bigBreak,
     },
     {
         name: "big break",
-        durationinMinutes: 15,
-        nextPhaseDuration: 20,
+        durationinMinutes: timeDurationConfig.bigBreak,
+        nextPhaseDuration: timeDurationConfig.work,
     },
 ];
