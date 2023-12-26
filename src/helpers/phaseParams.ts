@@ -4,9 +4,9 @@ export type Phase = {
     nextPhaseDuration: number;
 };
 const timeDurationConfig = {
-    work: 10,
+    work: 25,
     break: 5,
-    bigBreak: 15,
+    bigBreak: 30,
 };
 
 export const phaseParams: Phase[] = [
